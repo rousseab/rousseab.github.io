@@ -1,0 +1,470 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>LambdaZero.models package &mdash; LambdaZero v0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="LambdaZero.datasets package" href="LambdaZero.datasets.html" />
+    <link rel="prev" title="LambdaZero.inputs package" href="LambdaZero.inputs.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> LambdaZero
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">README</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LambdaZero.utils.html">LambdaZero.utils package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LambdaZero.chem.html">LambdaZero.chem package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LambdaZero.environments.html">LambdaZero.environments package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LambdaZero.inputs.html">LambdaZero.inputs package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">LambdaZero.models package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-LambdaZero.models.tf_models">LambdaZero.models.tf_models module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-LambdaZero.models.torch_models">LambdaZero.models.torch_models module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-LambdaZero.models.wrappers">LambdaZero.models.wrappers module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-LambdaZero.models">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="LambdaZero.datasets.html">LambdaZero.datasets package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LambdaZero.examples.html">LambdaZero.examples package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">LambdaZero</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>LambdaZero.models package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/LambdaZero.models.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="lambdazero-models-package">
+<h1>LambdaZero.models package<a class="headerlink" href="#lambdazero-models-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-LambdaZero.models.tf_models">
+<span id="lambdazero-models-tf-models-module"></span><h2>LambdaZero.models.tf_models module<a class="headerlink" href="#module-LambdaZero.models.tf_models" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="LambdaZero.models.tf_models.MolActorCritic_tfv1">
+<em class="property">class </em><code class="sig-prename descclassname">LambdaZero.models.tf_models.</code><code class="sig-name descname">MolActorCritic_tfv1</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obs_space</span></em>, <em class="sig-param"><span class="n">action_space</span></em>, <em class="sig-param"><span class="n">num_outputs</span></em>, <em class="sig-param"><span class="n">model_config</span></em>, <em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kw</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.models.tf_models.MolActorCritic_tfv1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ray.rllib.agents.dqn.distributional_q_model.DistributionalQModel</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">ray.rllib.models.tf.tf_modelv2.TFModelV2</span></code></p>
+<dl class="py method">
+<dt id="LambdaZero.models.tf_models.MolActorCritic_tfv1.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_dict</span></em>, <em class="sig-param"><span class="n">state</span></em>, <em class="sig-param"><span class="n">seq_lens</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.models.tf_models.MolActorCritic_tfv1.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Call the model with the given input tensors and state.</p>
+<p>Any complex observations (dicts, tuples, etc.) will be unpacked by
+__call__ before being passed to forward(). To access the flattened
+observation tensor, refer to input_dict[“obs_flat”].</p>
+<p>This method can be called any number of times. In eager execution,
+each call to forward() will eagerly evaluate the model. In symbolic
+execution, each call to forward creates a computation graph that
+operates over the variables of this model (i.e., shares weights).</p>
+<p>Custom models should override this instead of __call__.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_dict</strong> (<em>dict</em>) – dictionary of input tensors, including “obs”,
+“obs_flat”, “prev_action”, “prev_reward”, “is_training”</p></li>
+<li><p><strong>state</strong> (<em>list</em>) – list of state tensors with sizes matching those
+returned by get_initial_state + the batch dimension</p></li>
+<li><p><strong>seq_lens</strong> (<em>Tensor</em>) – 1d tensor holding input sequence lengths</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>The model output tensor of size</dt><dd><p>[BATCH, num_outputs]</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>(outputs, state)</p>
+</dd>
+</dl>
+<p>Sample implementation for the <code class="docutils literal notranslate"><span class="pre">MyModelClass</span></code> example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_dict</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">seq_lens</span><span class="p">):</span>
+    <span class="n">model_out</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_value_out</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_model</span><span class="p">(</span><span class="n">input_dict</span><span class="p">[</span><span class="s2">&quot;obs&quot;</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">model_out</span><span class="p">,</span> <span class="n">state</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.models.tf_models.MolActorCritic_tfv1.value_function">
+<code class="sig-name descname">value_function</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.models.tf_models.MolActorCritic_tfv1.value_function" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the value function estimate for the most recent forward pass.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>value estimate tensor of shape [BATCH].</p>
+</dd>
+</dl>
+<p>Sample implementation for the <code class="docutils literal notranslate"><span class="pre">MyModelClass</span></code> example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">value_function</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_value_out</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-LambdaZero.models.torch_models">
+<span id="lambdazero-models-torch-models-module"></span><h2>LambdaZero.models.torch_models module<a class="headerlink" href="#module-LambdaZero.models.torch_models" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="LambdaZero.models.torch_models.ActorCriticModel">
+<em class="property">class </em><code class="sig-prename descclassname">LambdaZero.models.torch_models.</code><code class="sig-name descname">ActorCriticModel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obs_space</span></em>, <em class="sig-param"><span class="n">action_space</span></em>, <em class="sig-param"><span class="n">num_outputs</span></em>, <em class="sig-param"><span class="n">model_config</span></em>, <em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.models.torch_models.ActorCriticModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ray.rllib.models.torch.torch_modelv2.TorchModelV2</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
+<dl class="py method">
+<dt id="LambdaZero.models.torch_models.ActorCriticModel.compute_priors_and_value">
+<code class="sig-name descname">compute_priors_and_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.models.torch_models.ActorCriticModel.compute_priors_and_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.models.torch_models.ActorCriticModel.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_dict</span></em>, <em class="sig-param"><span class="n">state</span></em>, <em class="sig-param"><span class="n">seq_lens</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.models.torch_models.ActorCriticModel.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Call the model with the given input tensors and state.</p>
+<p>Any complex observations (dicts, tuples, etc.) will be unpacked by
+__call__ before being passed to forward(). To access the flattened
+observation tensor, refer to input_dict[“obs_flat”].</p>
+<p>This method can be called any number of times. In eager execution,
+each call to forward() will eagerly evaluate the model. In symbolic
+execution, each call to forward creates a computation graph that
+operates over the variables of this model (i.e., shares weights).</p>
+<p>Custom models should override this instead of __call__.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_dict</strong> (<em>dict</em>) – dictionary of input tensors, including “obs”,
+“obs_flat”, “prev_action”, “prev_reward”, “is_training”</p></li>
+<li><p><strong>state</strong> (<em>list</em>) – list of state tensors with sizes matching those
+returned by get_initial_state + the batch dimension</p></li>
+<li><p><strong>seq_lens</strong> (<em>Tensor</em>) – 1d tensor holding input sequence lengths</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>The model output tensor of size</dt><dd><p>[BATCH, num_outputs]</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>(outputs, state)</p>
+</dd>
+</dl>
+<p>Sample implementation for the <code class="docutils literal notranslate"><span class="pre">MyModelClass</span></code> example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_dict</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">seq_lens</span><span class="p">):</span>
+    <span class="n">features</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hidden_layers</span><span class="p">(</span><span class="n">input_dict</span><span class="p">[</span><span class="s2">&quot;obs&quot;</span><span class="p">])</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_value_out</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_value_branch</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_logits</span><span class="p">(</span><span class="n">features</span><span class="p">),</span> <span class="n">state</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.models.torch_models.ActorCriticModel.value_function">
+<code class="sig-name descname">value_function</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.models.torch_models.ActorCriticModel.value_function" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the value function estimate for the most recent forward pass.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>value estimate tensor of shape [BATCH].</p>
+</dd>
+</dl>
+<p>Sample implementation for the <code class="docutils literal notranslate"><span class="pre">MyModelClass</span></code> example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">value_function</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_value_out</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="LambdaZero.models.torch_models.MPNNet">
+<em class="property">class </em><code class="sig-prename descclassname">LambdaZero.models.torch_models.</code><code class="sig-name descname">MPNNet</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">num_feat</span><span class="o">=</span><span class="default_value">14</span></em>, <em class="sig-param"><span class="n">dim</span><span class="o">=</span><span class="default_value">64</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.models.torch_models.MPNNet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>A message passing neural network implementation based on Gilmer et al. &lt;<a class="reference external" href="https://arxiv.org/pdf/1704.01212.pdf">https://arxiv.org/pdf/1704.01212.pdf</a>&gt;</p>
+<dl class="py method">
+<dt id="LambdaZero.models.torch_models.MPNNet.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.models.torch_models.MPNNet.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="LambdaZero.models.torch_models.MolActorCritic_thv1">
+<em class="property">class </em><code class="sig-prename descclassname">LambdaZero.models.torch_models.</code><code class="sig-name descname">MolActorCritic_thv1</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obs_space</span></em>, <em class="sig-param"><span class="n">action_space</span></em>, <em class="sig-param"><span class="n">num_outputs</span></em>, <em class="sig-param"><span class="n">model_config</span></em>, <em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.models.torch_models.MolActorCritic_thv1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ray.rllib.models.torch.torch_modelv2.TorchModelV2</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
+<dl class="py method">
+<dt id="LambdaZero.models.torch_models.MolActorCritic_thv1.compute_priors_and_value">
+<code class="sig-name descname">compute_priors_and_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.models.torch_models.MolActorCritic_thv1.compute_priors_and_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.models.torch_models.MolActorCritic_thv1.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_dict</span></em>, <em class="sig-param"><span class="n">state</span></em>, <em class="sig-param"><span class="n">seq_lens</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.models.torch_models.MolActorCritic_thv1.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Call the model with the given input tensors and state.</p>
+<p>Any complex observations (dicts, tuples, etc.) will be unpacked by
+__call__ before being passed to forward(). To access the flattened
+observation tensor, refer to input_dict[“obs_flat”].</p>
+<p>This method can be called any number of times. In eager execution,
+each call to forward() will eagerly evaluate the model. In symbolic
+execution, each call to forward creates a computation graph that
+operates over the variables of this model (i.e., shares weights).</p>
+<p>Custom models should override this instead of __call__.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_dict</strong> (<em>dict</em>) – dictionary of input tensors, including “obs”,
+“obs_flat”, “prev_action”, “prev_reward”, “is_training”</p></li>
+<li><p><strong>state</strong> (<em>list</em>) – list of state tensors with sizes matching those
+returned by get_initial_state + the batch dimension</p></li>
+<li><p><strong>seq_lens</strong> (<em>Tensor</em>) – 1d tensor holding input sequence lengths</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>The model output tensor of size</dt><dd><p>[BATCH, num_outputs]</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>(outputs, state)</p>
+</dd>
+</dl>
+<p>Sample implementation for the <code class="docutils literal notranslate"><span class="pre">MyModelClass</span></code> example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_dict</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">seq_lens</span><span class="p">):</span>
+    <span class="n">features</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hidden_layers</span><span class="p">(</span><span class="n">input_dict</span><span class="p">[</span><span class="s2">&quot;obs&quot;</span><span class="p">])</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_value_out</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_value_branch</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_logits</span><span class="p">(</span><span class="n">features</span><span class="p">),</span> <span class="n">state</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.models.torch_models.MolActorCritic_thv1.value_function">
+<code class="sig-name descname">value_function</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.models.torch_models.MolActorCritic_thv1.value_function" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the value function estimate for the most recent forward pass.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>value estimate tensor of shape [BATCH].</p>
+</dd>
+</dl>
+<p>Sample implementation for the <code class="docutils literal notranslate"><span class="pre">MyModelClass</span></code> example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">value_function</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_value_out</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="LambdaZero.models.torch_models.convert_to_tensor">
+<code class="sig-prename descclassname">LambdaZero.models.torch_models.</code><code class="sig-name descname">convert_to_tensor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arr</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.models.torch_models.convert_to_tensor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-LambdaZero.models.wrappers">
+<span id="lambdazero-models-wrappers-module"></span><h2>LambdaZero.models.wrappers module<a class="headerlink" href="#module-LambdaZero.models.wrappers" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="LambdaZero.models.wrappers.ChempropWrapper_v1">
+<em class="property">class </em><code class="sig-prename descclassname">LambdaZero.models.wrappers.</code><code class="sig-name descname">ChempropWrapper_v1</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.models.wrappers.ChempropWrapper_v1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="LambdaZero.models.wrappers.ChempropWrapper_v1.train">
+<code class="sig-name descname">train</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.models.wrappers.ChempropWrapper_v1.train" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-LambdaZero.models">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-LambdaZero.models" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="LambdaZero.datasets.html" class="btn btn-neutral float-right" title="LambdaZero.datasets package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="LambdaZero.inputs.html" class="btn btn-neutral float-left" title="LambdaZero.inputs package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, LambdaZero Collaboration
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
