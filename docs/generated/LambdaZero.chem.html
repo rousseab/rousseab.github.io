@@ -1,0 +1,407 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>LambdaZero.chem package &mdash; LambdaZero v0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../static/documentation_options.js"></script>
+        <script src="../static/jquery.js"></script>
+        <script src="../static/underscore.js"></script>
+        <script src="../static/doctools.js"></script>
+        <script src="../static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="LambdaZero.environments package" href="LambdaZero.environments.html" />
+    <link rel="prev" title="Simple Example" href="../example.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> LambdaZero
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Get Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../readme_link.html">LambdaZero: search in the space of small molecules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../readme_link.html#install">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../readme_link.html#getting-started">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../readme_link.html#getting-involved">Getting Involved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../example.html">Simple Example</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">LambdaZero.chem package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-LambdaZero.chem.chem_op">LambdaZero.chem.chem_op module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-LambdaZero.chem.fragdb_op">LambdaZero.chem.fragdb_op module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-LambdaZero.chem">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="LambdaZero.environments.html">LambdaZero.environments package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LambdaZero.examples.html">LambdaZero.examples package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LambdaZero.datasets.html">LambdaZero.datasets package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LambdaZero.inputs.html">LambdaZero.inputs package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LambdaZero.models.html">LambdaZero.models package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LambdaZero.utils.html">LambdaZero.utils package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">LambdaZero</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>LambdaZero.chem package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/generated/LambdaZero.chem.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="lambdazero-chem-package">
+<h1>LambdaZero.chem package<a class="headerlink" href="#lambdazero-chem-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-LambdaZero.chem.chem_op">
+<span id="lambdazero-chem-chem-op-module"></span><h2>LambdaZero.chem.chem_op module<a class="headerlink" href="#module-LambdaZero.chem.chem_op" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="LambdaZero.chem.chem_op.Dock_smi">
+<em class="property">class </em><code class="sig-prename descclassname">LambdaZero.chem.chem_op.</code><code class="sig-name descname">Dock_smi</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">outpath</span></em>, <em class="sig-param"><span class="n">chimera_dir</span></em>, <em class="sig-param"><span class="n">dock6_dir</span></em>, <em class="sig-param"><span class="n">docksetup_dir</span></em>, <em class="sig-param"><span class="n">cleanup</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">trustme</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">gas_charge</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">rec_site_file</span><span class="o">=</span><span class="default_value">'2_site/selected_spheres.sph'</span></em>, <em class="sig-param"><span class="n">grid_prefix</span><span class="o">=</span><span class="default_value">'3_grid/grid'</span></em>, <em class="sig-param"><span class="n">dock_in_template</span><span class="o">=</span><span class="default_value">'4_dock/anchor_and_grow.in'</span></em>, <em class="sig-param"><span class="n">vdw_defn_file</span><span class="o">=</span><span class="default_value">'parameters/vdw_AMBER_parm99.defn'</span></em>, <em class="sig-param"><span class="n">flex_defn_file</span><span class="o">=</span><span class="default_value">'parameters/flex.defn'</span></em>, <em class="sig-param"><span class="n">flex_drive_file</span><span class="o">=</span><span class="default_value">'parameters/flex_drive.tbl'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.chem_op.Dock_smi" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="LambdaZero.chem.chem_op.Dock_smi.dock">
+<code class="sig-name descname">dock</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">smi</span></em>, <em class="sig-param"><span class="n">mol_name</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">molgen_conf</span><span class="o">=</span><span class="default_value">20</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.chem_op.Dock_smi.dock" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="LambdaZero.chem.chem_op.FPEmbedding_v2">
+<em class="property">class </em><code class="sig-prename descclassname">LambdaZero.chem.chem_op.</code><code class="sig-name descname">FPEmbedding_v2</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mol_fp_len</span></em>, <em class="sig-param"><span class="n">mol_fp_radiis</span></em>, <em class="sig-param"><span class="n">stem_fp_len</span></em>, <em class="sig-param"><span class="n">stem_fp_radiis</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.chem_op.FPEmbedding_v2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="LambdaZero.chem.chem_op.ScaffoldSplit">
+<em class="property">class </em><code class="sig-prename descclassname">LambdaZero.chem.chem_op.</code><code class="sig-name descname">ScaffoldSplit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mols_smiles</span></em>, <em class="sig-param"><span class="n">incude_chirality</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.chem_op.ScaffoldSplit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="LambdaZero.chem.chem_op.break_on_bonds">
+<code class="sig-prename descclassname">LambdaZero.chem.chem_op.</code><code class="sig-name descname">break_on_bonds</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mol</span></em>, <em class="sig-param"><span class="n">jun_bonds</span></em>, <em class="sig-param"><span class="n">frags_generic</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.chem_op.break_on_bonds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Breaks molecule into fragments
+:param mol: molecule
+:param junction_bonds: junction_bonds [n_junction_bonds,4] bond = [frag0, frag1, atm0, atm1]
+:return:</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="LambdaZero.chem.chem_op.build_mol">
+<code class="sig-prename descclassname">LambdaZero.chem.chem_op.</code><code class="sig-name descname">build_mol</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">smiles</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">num_conf</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">minimize</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">noh</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">charges</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.chem_op.build_mol" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="LambdaZero.chem.chem_op.compute_isometry">
+<code class="sig-prename descclassname">LambdaZero.chem.chem_op.</code><code class="sig-name descname">compute_isometry</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mol</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.chem_op.compute_isometry" title="Permalink to this definition">¶</a></dt>
+<dd><p>:return [num_atoms] isometric group</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="LambdaZero.chem.chem_op.draw_frag">
+<code class="sig-prename descclassname">LambdaZero.chem.chem_op.</code><code class="sig-name descname">draw_frag</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">frag_name</span></em>, <em class="sig-param"><span class="n">r_idx</span></em>, <em class="sig-param"><span class="n">out_path</span></em>, <em class="sig-param"><span class="n">out_file</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.chem_op.draw_frag" title="Permalink to this definition">¶</a></dt>
+<dd><p>0th r_idx should be the actual stem of the group</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="LambdaZero.chem.chem_op.find_rota_murcko_bonds">
+<code class="sig-prename descclassname">LambdaZero.chem.chem_op.</code><code class="sig-name descname">find_rota_murcko_bonds</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mol</span></em>, <em class="sig-param"><span class="n">sanitize</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.chem_op.find_rota_murcko_bonds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Finds rotatable bonds (first) and Murcko bonds (second)
+:param mol:
+:return:</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="LambdaZero.chem.chem_op.fragment_molecule">
+<code class="sig-prename descclassname">LambdaZero.chem.chem_op.</code><code class="sig-name descname">fragment_molecule</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mol</span></em>, <em class="sig-param"><span class="n">frags_generic</span></em>, <em class="sig-param"><span class="n">decomposition</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.chem_op.fragment_molecule" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fragments a whole molecule and adds to the database.
+:param mol:
+:param frags_generic:
+:param add_frags:
+:return:</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="LambdaZero.chem.chem_op.get_fp">
+<code class="sig-prename descclassname">LambdaZero.chem.chem_op.</code><code class="sig-name descname">get_fp</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mol</span></em>, <em class="sig-param"><span class="n">fp_length</span></em>, <em class="sig-param"><span class="n">fp_radiis</span></em>, <em class="sig-param"><span class="n">from_atoms</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.chem_op.get_fp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get Morgan Fingerprint of a specific SMILES string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>smiles</strong> – String. The SMILES string of the molecule.</p></li>
+<li><p><strong>hparams</strong> – tf.contrib.training.HParams. Hyper parameters.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>np.array. shape = [hparams.fingerprint_length]. The Morgan fingerprint.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="LambdaZero.chem.chem_op.mol_from_frag">
+<code class="sig-prename descclassname">LambdaZero.chem.chem_op.</code><code class="sig-name descname">mol_from_frag</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">jun_bonds</span></em>, <em class="sig-param"><span class="n">frags</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">frag_smis</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">coord</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">optimize</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.chem_op.mol_from_frag" title="Permalink to this definition">¶</a></dt>
+<dd><p>joins 2 or more fragments into a single molecule</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="LambdaZero.chem.chem_op.mol_to_graph">
+<code class="sig-prename descclassname">LambdaZero.chem.chem_op.</code><code class="sig-name descname">mol_to_graph</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">smiles</span></em>, <em class="sig-param"><span class="n">num_conf</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">noh</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">feat</span><span class="o">=</span><span class="default_value">'mpnn'</span></em>, <em class="sig-param"><span class="n">dockscore</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">gridscore</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">klabel</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.chem_op.mol_to_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>mol to graph convertor</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="LambdaZero.chem.chem_op.mol_to_graph_backend">
+<code class="sig-prename descclassname">LambdaZero.chem.chem_op.</code><code class="sig-name descname">mol_to_graph_backend</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">atmfeat</span></em>, <em class="sig-param"><span class="n">coord</span></em>, <em class="sig-param"><span class="n">bond</span></em>, <em class="sig-param"><span class="n">bondfeat</span></em>, <em class="sig-param"><span class="n">props</span><span class="o">=</span><span class="default_value">{}</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.chem_op.mol_to_graph_backend" title="Permalink to this definition">¶</a></dt>
+<dd><p>convert to PyTorch geometric module</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="LambdaZero.chem.chem_op.mpnn_feat">
+<code class="sig-prename descclassname">LambdaZero.chem.chem_op.</code><code class="sig-name descname">mpnn_feat</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mol</span></em>, <em class="sig-param"><span class="n">ifcoord</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">panda_fmt</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">one_hot_atom</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">donor_features</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.chem_op.mpnn_feat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="LambdaZero.chem.chem_op.onehot">
+<code class="sig-prename descclassname">LambdaZero.chem.chem_op.</code><code class="sig-name descname">onehot</code><span class="sig-paren">(</span><em class="sig-param">arr</em>, <em class="sig-param">num_classes</em>, <em class="sig-param">dtype=&lt;class 'int'&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.chem_op.onehot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-LambdaZero.chem.fragdb_op">
+<span id="lambdazero-chem-fragdb-op-module"></span><h2>LambdaZero.chem.fragdb_op module<a class="headerlink" href="#module-LambdaZero.chem.fragdb_op" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="LambdaZero.chem.fragdb_op.FragDB">
+<em class="property">class </em><code class="sig-prename descclassname">LambdaZero.chem.fragdb_op.</code><code class="sig-name descname">FragDB</code><a class="headerlink" href="#LambdaZero.chem.fragdb_op.FragDB" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="LambdaZero.chem.fragdb_op.FragDB.add_frag">
+<code class="sig-name descname">add_frag</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">frag_name</span></em>, <em class="sig-param"><span class="n">frag_elem</span></em>, <em class="sig-param"><span class="n">frag_r</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.fragdb_op.FragDB.add_frag" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.chem.fragdb_op.FragDB.add_frags">
+<code class="sig-name descname">add_frags</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">jun_bonds</span></em>, <em class="sig-param"><span class="n">frag_names</span></em>, <em class="sig-param"><span class="n">frag_elem</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.fragdb_op.FragDB.add_frags" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.chem.fragdb_op.FragDB.add_mol">
+<code class="sig-name descname">add_mol</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mol</span></em>, <em class="sig-param"><span class="n">frags_generic</span></em>, <em class="sig-param"><span class="n">decomposition</span><span class="o">=</span><span class="default_value">'rota_murcko'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.fragdb_op.FragDB.add_mol" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.chem.fragdb_op.FragDB.draw_ufrag">
+<code class="sig-name descname">draw_ufrag</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">draw_folder</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.fragdb_op.FragDB.draw_ufrag" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.chem.fragdb_op.FragDB.filter_ufrags">
+<code class="sig-name descname">filter_ufrags</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">block_cutoff</span><span class="o">=</span><span class="default_value">250</span></em>, <em class="sig-param"><span class="n">r_cutoff</span><span class="o">=</span><span class="default_value">100</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.fragdb_op.FragDB.filter_ufrags" title="Permalink to this definition">¶</a></dt>
+<dd><p>deletes most of the uni</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.chem.fragdb_op.FragDB.get_mol_ufrag">
+<code class="sig-name descname">get_mol_ufrag</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mol</span></em>, <em class="sig-param"><span class="n">frags_generic</span></em>, <em class="sig-param"><span class="n">decomposition</span><span class="o">=</span><span class="default_value">'rota_murcko'</span></em>, <em class="sig-param"><span class="n">elem_asnum</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.fragdb_op.FragDB.get_mol_ufrag" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.chem.fragdb_op.FragDB.get_ufrag">
+<code class="sig-name descname">get_ufrag</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">frag_name</span></em>, <em class="sig-param"><span class="n">frag_bond</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.fragdb_op.FragDB.get_ufrag" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.chem.fragdb_op.FragDB.load_state">
+<code class="sig-name descname">load_state</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fragdb_path</span></em>, <em class="sig-param"><span class="n">ufrag</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.fragdb_op.FragDB.load_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>write this object to the disk</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.chem.fragdb_op.FragDB.make_ufrags">
+<code class="sig-name descname">make_ufrags</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.fragdb_op.FragDB.make_ufrags" title="Permalink to this definition">¶</a></dt>
+<dd><p>generate the new database of unique fragments</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.chem.fragdb_op.FragDB.save_state">
+<code class="sig-name descname">save_state</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fragdb_path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.chem.fragdb_op.FragDB.save_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>write this object to the disk</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-LambdaZero.chem">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-LambdaZero.chem" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="LambdaZero.environments.html" class="btn btn-neutral float-right" title="LambdaZero.environments package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../example.html" class="btn btn-neutral float-left" title="Simple Example" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, LambdaZero Collaboration
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

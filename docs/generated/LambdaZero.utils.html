@@ -1,0 +1,336 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>LambdaZero.utils package &mdash; LambdaZero v0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../static/documentation_options.js"></script>
+        <script src="../static/jquery.js"></script>
+        <script src="../static/underscore.js"></script>
+        <script src="../static/doctools.js"></script>
+        <script src="../static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="LambdaZero.models package" href="LambdaZero.models.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> LambdaZero
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Get Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../readme_link.html">LambdaZero: search in the space of small molecules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../readme_link.html#install">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../readme_link.html#getting-started">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../readme_link.html#getting-involved">Getting Involved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../example.html">Simple Example</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="LambdaZero.chem.html">LambdaZero.chem package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LambdaZero.environments.html">LambdaZero.environments package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LambdaZero.examples.html">LambdaZero.examples package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LambdaZero.datasets.html">LambdaZero.datasets package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LambdaZero.inputs.html">LambdaZero.inputs package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LambdaZero.models.html">LambdaZero.models package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">LambdaZero.utils package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-LambdaZero.utils.mcts">LambdaZero.utils.mcts module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-LambdaZero.utils.utils_op">LambdaZero.utils.utils_op module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-LambdaZero.utils">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">LambdaZero</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>LambdaZero.utils package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/generated/LambdaZero.utils.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="lambdazero-utils-package">
+<h1>LambdaZero.utils package<a class="headerlink" href="#lambdazero-utils-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-LambdaZero.utils.mcts">
+<span id="lambdazero-utils-mcts-module"></span><h2>LambdaZero.utils.mcts module<a class="headerlink" href="#module-LambdaZero.utils.mcts" title="Permalink to this headline">¶</a></h2>
+<p>Mcts implementation modified from
+<a class="reference external" href="https://github.com/brilee/python_uct/blob/master/numpy_impl.py">https://github.com/brilee/python_uct/blob/master/numpy_impl.py</a></p>
+<dl class="py class">
+<dt id="LambdaZero.utils.mcts.MCTS">
+<em class="property">class </em><code class="sig-prename descclassname">LambdaZero.utils.mcts.</code><code class="sig-name descname">MCTS</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span></em>, <em class="sig-param"><span class="n">mcts_param</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.utils.mcts.MCTS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="LambdaZero.utils.mcts.MCTS.compute_action">
+<code class="sig-name descname">compute_action</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">node</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.utils.mcts.MCTS.compute_action" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="LambdaZero.utils.mcts.Node">
+<em class="property">class </em><code class="sig-prename descclassname">LambdaZero.utils.mcts.</code><code class="sig-name descname">Node</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">action</span></em>, <em class="sig-param"><span class="n">obs</span></em>, <em class="sig-param"><span class="n">done</span></em>, <em class="sig-param"><span class="n">reward</span></em>, <em class="sig-param"><span class="n">state</span></em>, <em class="sig-param"><span class="n">mcts</span></em>, <em class="sig-param"><span class="n">parent</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.utils.mcts.Node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="LambdaZero.utils.mcts.Node.backup">
+<code class="sig-name descname">backup</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.utils.mcts.Node.backup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.utils.mcts.Node.best_action">
+<code class="sig-name descname">best_action</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.utils.mcts.Node.best_action" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>action</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.utils.mcts.Node.child_Q">
+<code class="sig-name descname">child_Q</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.utils.mcts.Node.child_Q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.utils.mcts.Node.child_U">
+<code class="sig-name descname">child_U</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.utils.mcts.Node.child_U" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.utils.mcts.Node.expand">
+<code class="sig-name descname">expand</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">child_priors</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.utils.mcts.Node.expand" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.utils.mcts.Node.get_child">
+<code class="sig-name descname">get_child</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">action</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.utils.mcts.Node.get_child" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.utils.mcts.Node.number_visits">
+<em class="property">property </em><code class="sig-name descname">number_visits</code><a class="headerlink" href="#LambdaZero.utils.mcts.Node.number_visits" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.utils.mcts.Node.select">
+<code class="sig-name descname">select</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.utils.mcts.Node.select" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.utils.mcts.Node.total_value">
+<em class="property">property </em><code class="sig-name descname">total_value</code><a class="headerlink" href="#LambdaZero.utils.mcts.Node.total_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="LambdaZero.utils.mcts.RootParentNode">
+<em class="property">class </em><code class="sig-prename descclassname">LambdaZero.utils.mcts.</code><code class="sig-name descname">RootParentNode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">env</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.utils.mcts.RootParentNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-LambdaZero.utils.utils_op">
+<span id="lambdazero-utils-utils-op-module"></span><h2>LambdaZero.utils.utils_op module<a class="headerlink" href="#module-LambdaZero.utils.utils_op" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="LambdaZero.utils.utils_op.Complete">
+<em class="property">class </em><code class="sig-prename descclassname">LambdaZero.utils.utils_op.</code><code class="sig-name descname">Complete</code><a class="headerlink" href="#LambdaZero.utils.utils_op.Complete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="LambdaZero.utils.utils_op.dock_metrics">
+<code class="sig-prename descclassname">LambdaZero.utils.utils_op.</code><code class="sig-name descname">dock_metrics</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">info</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.utils.utils_op.dock_metrics" title="Permalink to this definition">¶</a></dt>
+<dd><p>Report custom metrics for each episode in RayRllib
+:param info: episode info
+:return:</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="LambdaZero.utils.utils_op.get_external_dirs">
+<code class="sig-prename descclassname">LambdaZero.utils.utils_op.</code><code class="sig-name descname">get_external_dirs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.utils.utils_op.get_external_dirs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Locate in the filesystem external programs/folders essensial for LambdaZero execution
+:return:
+datasets_dir (datasets),
+programs_dir (external program binaries),
+summaries_dir (where to put outpus/model summaries)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="LambdaZero.utils.utils_op.uniform_sample">
+<code class="sig-prename descclassname">LambdaZero.utils.utils_op.</code><code class="sig-name descname">uniform_sample</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">nsamples</span></em>, <em class="sig-param"><span class="n">nbins</span><span class="o">=</span><span class="default_value">20</span></em>, <em class="sig-param"><span class="n">nmargin</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">bin_low</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">bin_high</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.utils.utils_op.uniform_sample" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-LambdaZero.utils">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-LambdaZero.utils" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="LambdaZero.models.html" class="btn btn-neutral float-left" title="LambdaZero.models package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, LambdaZero Collaboration
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

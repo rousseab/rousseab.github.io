@@ -1,0 +1,401 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>LambdaZero.examples.AlphaZero.core package &mdash; LambdaZero v0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../static/documentation_options.js"></script>
+        <script src="../static/jquery.js"></script>
+        <script src="../static/underscore.js"></script>
+        <script src="../static/doctools.js"></script>
+        <script src="../static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="LambdaZero.examples.AlphaZero.optimizer package" href="LambdaZero.examples.AlphaZero.optimizer.html" />
+    <link rel="prev" title="LambdaZero.examples.AlphaZero package" href="LambdaZero.examples.AlphaZero.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> LambdaZero
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Get Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../readme_link.html">LambdaZero: search in the space of small molecules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../readme_link.html#install">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../readme_link.html#getting-started">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../readme_link.html#getting-involved">Getting Involved</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../example.html">Simple Example</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="LambdaZero.chem.html">LambdaZero.chem package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LambdaZero.environments.html">LambdaZero.environments package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="LambdaZero.examples.html">LambdaZero.examples package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="LambdaZero.examples.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="LambdaZero.examples.AlphaZero.html">LambdaZero.examples.AlphaZero package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="LambdaZero.examples.AlphaZero.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="LambdaZero.examples.AlphaZero.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="LambdaZero.examples.AlphaZero.html#module-LambdaZero.examples.AlphaZero.config">LambdaZero.examples.AlphaZero.config module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="LambdaZero.examples.AlphaZero.html#lambdazero-examples-alphazero-train-az-module">LambdaZero.examples.AlphaZero.train_az module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="LambdaZero.examples.AlphaZero.html#module-LambdaZero.examples.AlphaZero">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="LambdaZero.examples.PPO.html">LambdaZero.examples.PPO package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LambdaZero.examples.actor_critic.html">LambdaZero.examples.actor_critic package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LambdaZero.examples.synthesizability.html">LambdaZero.examples.synthesizability package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="LambdaZero.examples.html#module-LambdaZero.examples">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="LambdaZero.datasets.html">LambdaZero.datasets package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LambdaZero.inputs.html">LambdaZero.inputs package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LambdaZero.models.html">LambdaZero.models package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LambdaZero.utils.html">LambdaZero.utils package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">LambdaZero</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="LambdaZero.examples.html">LambdaZero.examples package</a> &raquo;</li>
+        
+          <li><a href="LambdaZero.examples.AlphaZero.html">LambdaZero.examples.AlphaZero package</a> &raquo;</li>
+        
+      <li>LambdaZero.examples.AlphaZero.core package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/generated/LambdaZero.examples.AlphaZero.core.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="lambdazero-examples-alphazero-core-package">
+<h1>LambdaZero.examples.AlphaZero.core package<a class="headerlink" href="#lambdazero-examples-alphazero-core-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-LambdaZero.examples.AlphaZero.core.alpha_zero_policy">
+<span id="lambdazero-examples-alphazero-core-alpha-zero-policy-module"></span><h2>LambdaZero.examples.AlphaZero.core.alpha_zero_policy module<a class="headerlink" href="#module-LambdaZero.examples.AlphaZero.core.alpha_zero_policy" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="LambdaZero.examples.AlphaZero.core.alpha_zero_policy.AlphaZeroPolicy">
+<em class="property">class </em><code class="sig-prename descclassname">LambdaZero.examples.AlphaZero.core.alpha_zero_policy.</code><code class="sig-name descname">AlphaZeroPolicy</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">observation_space</span></em>, <em class="sig-param"><span class="n">action_space</span></em>, <em class="sig-param"><span class="n">config</span></em>, <em class="sig-param"><span class="n">model</span></em>, <em class="sig-param"><span class="n">loss</span></em>, <em class="sig-param"><span class="n">action_distribution_class</span></em>, <em class="sig-param"><span class="n">mcts_creator</span></em>, <em class="sig-param"><span class="n">env_creator</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.examples.AlphaZero.core.alpha_zero_policy.AlphaZeroPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ray.rllib.policy.torch_policy.TorchPolicy</span></code></p>
+<dl class="py method">
+<dt id="LambdaZero.examples.AlphaZero.core.alpha_zero_policy.AlphaZeroPolicy.compute_actions">
+<code class="sig-name descname">compute_actions</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obs_batch</span></em>, <em class="sig-param"><span class="n">state_batches</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">prev_action_batch</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">prev_reward_batch</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">info_batch</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">episodes</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.examples.AlphaZero.core.alpha_zero_policy.AlphaZeroPolicy.compute_actions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes actions for the current policy.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>obs_batch</strong> (<em>Union</em><em>[</em><em>List</em><em>,</em><em>np.ndarray</em><em>]</em>) – Batch of observations.</p></li>
+<li><p><strong>state_batches</strong> (<em>Optional</em><em>[</em><em>list</em><em>]</em>) – List of RNN state input batches,
+if any.</p></li>
+<li><p><strong>prev_action_batch</strong> (<em>Optional</em><em>[</em><em>List</em><em>,</em><em>np.ndarray</em><em>]</em>) – Batch of previous
+action values.</p></li>
+<li><p><strong>prev_reward_batch</strong> (<em>Optional</em><em>[</em><em>List</em><em>,</em><em>np.ndarray</em><em>]</em>) – Batch of previous
+rewards.</p></li>
+<li><p><strong>info_batch</strong> (<em>info</em>) – Batch of info objects.</p></li>
+<li><p><strong>episodes</strong> (<em>list</em>) – MultiAgentEpisode for each obs in obs_batch.
+This provides access to all of the internal episode state,
+which may be useful for model-based or multiagent algorithms.</p></li>
+<li><p><strong>explore</strong> (<em>bool</em>) – Whether to pick an exploitation or exploration
+action (default: None -&gt; use self.config[“explore”]).</p></li>
+<li><p><strong>timestep</strong> (<em>int</em>) – The current (sampling) time step.</p></li>
+<li><p><strong>kwargs</strong> – forward compatibility placeholder</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>batch of output actions, with shape like</dt><dd><p>[BATCH_SIZE, ACTION_SHAPE].</p>
+</dd>
+<dt>state_outs (list): list of RNN state output batches, if any, with</dt><dd><p>shape like [STATE_SIZE, BATCH_SIZE].</p>
+</dd>
+<dt>info (dict): dictionary of extra feature batches, if any, with</dt><dd><p>shape like {“f1”: [BATCH_SIZE, …], “f2”: [BATCH_SIZE, …]}.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>actions (np.ndarray)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.examples.AlphaZero.core.alpha_zero_policy.AlphaZeroPolicy.learn_on_batch">
+<code class="sig-name descname">learn_on_batch</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">postprocessed_batch</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.examples.AlphaZero.core.alpha_zero_policy.AlphaZeroPolicy.learn_on_batch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fused compute gradients and apply gradients call.</p>
+<p>Either this or the combination of compute/apply grads must be
+implemented by subclasses.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>dictionary of extra metadata from compute_gradients().</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>grad_info</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">batch</span> <span class="o">=</span> <span class="n">ev</span><span class="o">.</span><span class="n">sample</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ev</span><span class="o">.</span><span class="n">learn_on_batch</span><span class="p">(</span><span class="n">samples</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.examples.AlphaZero.core.alpha_zero_policy.AlphaZeroPolicy.postprocess_trajectory">
+<code class="sig-name descname">postprocess_trajectory</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sample_batch</span></em>, <em class="sig-param"><span class="n">other_agent_batches</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">episode</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.examples.AlphaZero.core.alpha_zero_policy.AlphaZeroPolicy.postprocess_trajectory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Implements algorithm-specific trajectory postprocessing.</p>
+<p>This will be called on each trajectory fragment computed during policy
+evaluation. Each fragment is guaranteed to be only from one episode.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sample_batch</strong> (<em>SampleBatch</em>) – batch of experiences for the policy,
+which will contain at most one episode trajectory.</p></li>
+<li><p><strong>other_agent_batches</strong> (<em>dict</em>) – In a multi-agent env, this contains a
+mapping of agent ids to (policy, agent_batch) tuples
+containing the policy and experiences of the other agents.</p></li>
+<li><p><strong>episode</strong> (<em>MultiAgentEpisode</em>) – this provides access to all of the
+internal episode state, which may be useful for model-based or
+multi-agent algorithms.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Postprocessed sample batch.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>SampleBatch</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-LambdaZero.examples.AlphaZero.core.alpha_zero_trainer">
+<span id="lambdazero-examples-alphazero-core-alpha-zero-trainer-module"></span><h2>LambdaZero.examples.AlphaZero.core.alpha_zero_trainer module<a class="headerlink" href="#module-LambdaZero.examples.AlphaZero.core.alpha_zero_trainer" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="LambdaZero.examples.AlphaZero.core.alpha_zero_trainer.AlphaZeroPolicyWrapperClass">
+<em class="property">class </em><code class="sig-prename descclassname">LambdaZero.examples.AlphaZero.core.alpha_zero_trainer.</code><code class="sig-name descname">AlphaZeroPolicyWrapperClass</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obs_space</span></em>, <em class="sig-param"><span class="n">action_space</span></em>, <em class="sig-param"><span class="n">config</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.examples.AlphaZero.core.alpha_zero_trainer.AlphaZeroPolicyWrapperClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#LambdaZero.examples.AlphaZero.core.alpha_zero_policy.AlphaZeroPolicy" title="LambdaZero.examples.AlphaZero.core.alpha_zero_policy.AlphaZeroPolicy"><code class="xref py py-class docutils literal notranslate"><span class="pre">LambdaZero.examples.AlphaZero.core.alpha_zero_policy.AlphaZeroPolicy</span></code></a></p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="LambdaZero.examples.AlphaZero.core.alpha_zero_trainer.alpha_zero_loss">
+<code class="sig-prename descclassname">LambdaZero.examples.AlphaZero.core.alpha_zero_trainer.</code><code class="sig-name descname">alpha_zero_loss</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">policy</span></em>, <em class="sig-param"><span class="n">model</span></em>, <em class="sig-param"><span class="n">dist_class</span></em>, <em class="sig-param"><span class="n">train_batch</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.examples.AlphaZero.core.alpha_zero_trainer.alpha_zero_loss" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="LambdaZero.examples.AlphaZero.core.alpha_zero_trainer.choose_policy_optimizer">
+<code class="sig-prename descclassname">LambdaZero.examples.AlphaZero.core.alpha_zero_trainer.</code><code class="sig-name descname">choose_policy_optimizer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">workers</span></em>, <em class="sig-param"><span class="n">config</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.examples.AlphaZero.core.alpha_zero_trainer.choose_policy_optimizer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="LambdaZero.examples.AlphaZero.core.alpha_zero_trainer.on_episode_start">
+<code class="sig-prename descclassname">LambdaZero.examples.AlphaZero.core.alpha_zero_trainer.</code><code class="sig-name descname">on_episode_start</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">info</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.examples.AlphaZero.core.alpha_zero_trainer.on_episode_start" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-LambdaZero.examples.AlphaZero.core.ranked_rewards">
+<span id="lambdazero-examples-alphazero-core-ranked-rewards-module"></span><h2>LambdaZero.examples.AlphaZero.core.ranked_rewards module<a class="headerlink" href="#module-LambdaZero.examples.AlphaZero.core.ranked_rewards" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="LambdaZero.examples.AlphaZero.core.ranked_rewards.RankedRewardsBuffer">
+<em class="property">class </em><code class="sig-prename descclassname">LambdaZero.examples.AlphaZero.core.ranked_rewards.</code><code class="sig-name descname">RankedRewardsBuffer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">buffer_max_length</span></em>, <em class="sig-param"><span class="n">percentile</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.examples.AlphaZero.core.ranked_rewards.RankedRewardsBuffer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="LambdaZero.examples.AlphaZero.core.ranked_rewards.RankedRewardsBuffer.add_reward">
+<code class="sig-name descname">add_reward</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">reward</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.examples.AlphaZero.core.ranked_rewards.RankedRewardsBuffer.add_reward" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.examples.AlphaZero.core.ranked_rewards.RankedRewardsBuffer.get_state">
+<code class="sig-name descname">get_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.examples.AlphaZero.core.ranked_rewards.RankedRewardsBuffer.get_state" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.examples.AlphaZero.core.ranked_rewards.RankedRewardsBuffer.normalize">
+<code class="sig-name descname">normalize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">reward</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.examples.AlphaZero.core.ranked_rewards.RankedRewardsBuffer.normalize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="LambdaZero.examples.AlphaZero.core.ranked_rewards.RankedRewardsBuffer.set_state">
+<code class="sig-name descname">set_state</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">state</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.examples.AlphaZero.core.ranked_rewards.RankedRewardsBuffer.set_state" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="LambdaZero.examples.AlphaZero.core.ranked_rewards.get_r2_env_wrapper">
+<code class="sig-prename descclassname">LambdaZero.examples.AlphaZero.core.ranked_rewards.</code><code class="sig-name descname">get_r2_env_wrapper</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">env_creator</span></em>, <em class="sig-param"><span class="n">r2_config</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LambdaZero.examples.AlphaZero.core.ranked_rewards.get_r2_env_wrapper" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-LambdaZero.examples.AlphaZero.core">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-LambdaZero.examples.AlphaZero.core" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="LambdaZero.examples.AlphaZero.optimizer.html" class="btn btn-neutral float-right" title="LambdaZero.examples.AlphaZero.optimizer package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="LambdaZero.examples.AlphaZero.html" class="btn btn-neutral float-left" title="LambdaZero.examples.AlphaZero package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, LambdaZero Collaboration
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
